@@ -21,6 +21,9 @@ WebDriver driver;
 	
 	@FindBy(how=How.XPATH,using="//input[@value='Confirm']")
 	private WebElement confirmbtn;
+	
+	@FindBy(how=How.XPATH,using="//a[@href='/account/dashboard']")
+	private WebElement Dashboard;
 
 
 	public void confirmorder(){
@@ -32,6 +35,7 @@ WebDriver driver;
 	}
 	
 	public void verifyorderdetail(){
+		Dashboard.click();
 		
 	}
 	
